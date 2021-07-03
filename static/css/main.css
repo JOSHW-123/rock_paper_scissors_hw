@@ -1,0 +1,28 @@
+body {
+    width: 80%;
+    margin:auto;
+    display: grid;
+    color: seashell;
+    box-shadow: 5px 11px 15px 0px #000000;
+    background: royalblue;
+    
+}
+
+
+.nav {
+    list-style: none;
+    display:flex ;
+    margin-left: 10px;
+    justify-content: space-evenly;
+    }
+
+.game {
+    margin: 30px;
+}
+
+#rockpaper {
+    margin-left: 50px;
+    outline: 3px double rgba(1,0,2,0.39);
+    outline-offset: 3px;
+    margin-right: 250px;
+}

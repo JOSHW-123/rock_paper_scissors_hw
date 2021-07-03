@@ -1,6 +1,6 @@
 class Player:
-    def __init__(self, decision, name):
-        self.decision = decision
+    def __init__(self, choice, name):
+        self.choice = choice
         self.name = name 
 
 

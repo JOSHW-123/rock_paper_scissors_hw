@@ -1,14 +1,30 @@
 {%  extends "base.html" %}
 
-{%  block content %}
+{%  block index %}
+
+<h1>Rock Paper Scissors</h1>
         
-<form action="/user" method="post">
-    <label for=""></label>
+    <form  class="" action="/play" method="post">
+        <div id="player_1">
+
+            <label for="player_1_name">Player 1 Name</label>
+            <input type="text" name="player_1_name" id="player_1_name">
+
+         </div>
+
+        <label for="player_2_name">Player 2 Name</label>
+        <input type="text" name="player_2_name" id="player_2_name">
+
+        <label for=""></label>
 
 
 
 
 
 
-<input type="submit" value="Lets Play" id="lets_play">
-</form>
+
+        <label for="player_2_name">Player 2 Name</label>
+        <input type="submit" value="Lets Play" id="lets_play">
+    </form>
+
+    {%  endblock %}
