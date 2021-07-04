@@ -11,7 +11,7 @@
     <div>
     <nav>
     <ul class="nav">
-        <li><a href="/home">Play Again</a></li>
+        <li><a href="/welcome">Home</a></li>
         <li><a href="/result">Results</a></li>
         <li><a href="/play">Lets Play</a></li>
     </ul>
@@ -22,69 +22,6 @@
 
     {%  endblock %}
 
-    <h1 id="rockpaper">Rock Paper Scissors</h1>
-        
-    <form  class="game" action="/play" method="post">
-        <div id="player_1">
-
-            <label for="player_1_name">Player 1 Name</label>
-            <input type="text" name="player_1_name" id="player_1_name">
-
-         </div>
-
-        <label for="player_2_name">Player 2 Name</label>
-        <input type="text" name="player_2_name" id="player_2_name">
-
-        <label for=""></label>
-
-
-        <p><b>PLAYER 1, MAKE YOUR CHOICE BELOW:</b></p>
-        
-
-        <div>
-          <input type="checkbox" id="rock" name="rock"
-                 checked>
-          <label for="rock">Rock</label>
-        </div>
-        <div>
-          <input type="checkbox" id="paper" name="paper">
-          <label for="paper">Paper</label>
-        </div>
-        <div>
-            <input type="checkbox" id="scissors" name="scissors">
-            <label for="scissors">Scissors</label>
-          </div>
-          <div>
-              <input type="submit" value="Lets Play" id="lets_play">
-          </div>
-
-          <p><b>PLAYER 2, MAKE YOUR CHOICE BELOW:</b></p>
-        
-
-        <div>
-          <input type="checkbox" id="rock" name="rock"
-                 checked>
-          <label for="rock">Rock</label>
-        </div>
-        <div>
-          <input type="checkbox" id="paper" name="paper">
-          <label for="paper">Paper</label>
-        </div>
-        <div>
-            <input type="checkbox" id="scissors" name="scissors">
-            <label for="scissors">Scissors</label>
-          </div>
-          <div>
-              <input type="submit" value="Lets Play" id="lets_play">
-          </div>
-        
-
-
-
-
-    
-        
-    </form>
     
 </body>
 </html>

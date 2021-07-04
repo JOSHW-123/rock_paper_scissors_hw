@@ -28,3 +28,13 @@ body {
     outline-offset: 3px;
     margin-right: 250px;
 }
+
+#results {
+    width: 80%;
+    margin:auto;
+    display: grid;
+    color: seashell;
+    box-shadow: 5px 11px 15px 0px #000000;
+    background: royalblue;
+
+}

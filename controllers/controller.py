@@ -8,9 +8,18 @@ from models.game import Game
 def base():
     return render_template('welcome.html', title='Rock Paper Scissors')
 
-@app.route('/result')
+@app.route('/result', methods=['POST', 'GET'])
 def result():
     return render_template('result.html', title='Results')
+
+@app.route('/welcome', methods=['POST', 'GET'])
+def welcome():
+    return render_template('welcome.html')
+
+@app.route('/play', methods=['POST'])
+def play():
+    return render_template('welcome.html')
+
 
 # @app.route('/events', methods=['POST'])
 # def add_event():
