@@ -6,8 +6,7 @@ from models.game import Game
 
 @app.route('/')
 def base():
-    game = Game
-    return render_template('base.html', title='Rock Paper Scissors')
+    return render_template('welcome.html', title='Rock Paper Scissors')
 
 @app.route('/result')
 def result():
