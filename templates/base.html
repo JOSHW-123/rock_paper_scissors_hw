@@ -22,11 +22,13 @@
     </nav>
   </div>
   
-    <hr>
-    {%  block content %}
+    <section>
+        {% block welcome %}{% endblock welcome %}
 
-    {%  endblock %}
+        {% block play %}{% endblock play %}
 
-    
+        {% block result %}{% endblock result %}
+
+    </section>  
 </body>
 </html>

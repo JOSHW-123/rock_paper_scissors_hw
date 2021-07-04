@@ -14,11 +14,11 @@ def result():
 
 @app.route('/welcome', methods=['POST', 'GET'])
 def welcome():
-    return render_template('welcome.html')
+    return render_template('welcome.html', title='Welcome')
 
-@app.route('/play', methods=['POST'])
+@app.route('/play', methods=['POST', 'GET'])
 def play():
-    return render_template('welcome.html')
+    return render_template('play.html', title='Play')
 
 
 # @app.route('/events', methods=['POST'])
