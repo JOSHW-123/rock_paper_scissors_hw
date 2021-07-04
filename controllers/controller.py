@@ -8,9 +8,7 @@ from models.game import Game
 def base():
     return render_template('welcome.html', title='Rock Paper Scissors')
 
-@app.route('/result', methods=['POST', 'GET'])
-def result():
-    return render_template('result.html', title='Results')
+
 
 @app.route('/welcome', methods=['POST', 'GET'])
 def welcome():
@@ -19,6 +17,25 @@ def welcome():
 @app.route('/play', methods=['POST', 'GET'])
 def play():
     return render_template('play.html', title='Play')
+
+@app.route('/result', methods=['POST', 'GET'])
+def result():
+    player_1_name = request.form.get('player_1_name')
+    player_1_choice = request.form.get('player_1_choice')
+    player_1 = Player(player_1_name, player_1_choice)
+    player_2_name = request.form.get('player_2_name')
+    player_2_choice = request.form.get('player_2_choice')
+    player_2 = Player(player_2_name, player_2_choice)
+
+    new_game = Game(player_1, player_2)
+    result = new_game.winner(player_1, player_2)
+    
+    return render_template('result.html', player_1_name=player_1_name, player_1_choice=player_1_choice, player_2_name=player_2_name, player_2_choice=player_2_choice, result=result)
+
+    # @app.route('/result', methods=['POST', 'GET'])
+    # def result():
+    #     return render_template('result.html', title='Results')
+
 
 
 # @app.route('/events', methods=['POST'])
