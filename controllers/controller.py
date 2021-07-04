@@ -3,9 +3,11 @@ from app import app
 from models.player import Player
 from models.game import Game
 
+
 @app.route('/')
-def index():
-    return render_template('index.html', title='Rock Paper Scissors')
+def base():
+    game = Game
+    return render_template('base.html', title='Rock Paper Scissors')
 
 @app.route('/result')
 def result():
