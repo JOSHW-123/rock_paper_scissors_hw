@@ -1,19 +1,23 @@
 body {
     width: 80%;
-    margin:auto;
+    margin:100px;
     display: grid;
     color: seashell;
     box-shadow: 5px 11px 15px 0px #000000;
     background: royalblue;
     
 }
-
+#welcome {
+    color: snow;
+}
 
 .nav {
     list-style: none;
     display:flex ;
     margin-left: 10px;
     justify-content: space-evenly;
+    color: snow;
+    margin-bottom: 10px ;
 
     
     }
